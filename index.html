@@ -10,25 +10,20 @@
 
 <body>
 
-<header class="header">
-<nav>
- 
-</nav>
-</header>
+<header class="header"></header>
 
 <div class="contiainer">
 <button class="start-button">Beging Quiz</button>
 
-<div class="questions-container">
-  <h2 class="question-titles">Questions</h2>
-  <div id="questions"><p>Question Placeholder</p></div>
-                    <button id="a" onclick="userAnswer('a')">A</button>
-                    <button id="b" onclick="userAnswer('b')">B</button>
-                    <button id="c" onclick="userAnswer('c')">C</button>
-                    <button id="d" onclick="userAnswer('d')">D</button>
-                </div>
-</div>
-</div>
+<div class="questions">
+  <div id="currentQuestion">
+    <h2>What color is the sky?</h2>
+    <button id="red">red</button>
+    <button id="yellow">yellow</button>
+    <button id="blue">blue</button>
+  </div>  
+</div>  
+
 <script src="script.js"></script>
 </body>
 </html>
