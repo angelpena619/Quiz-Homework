@@ -3,7 +3,6 @@ var questionTitles=document.getElementById("question-title");
 var question_options=document.getElementsByClassName("answer-button");
 var current_question_index = 0;
 
-
 //questions
 const questions = [{
     title: 'What color is the sky?',
@@ -11,7 +10,7 @@ const questions = [{
     answer: 'blue' 
   },
 {
-    title: 'what day is today?',
+    title: 'What day is today?',
     options: ['mon', 'tues', 'weds'],
     answer: 'weds' 
   },
@@ -20,6 +19,11 @@ const questions = [{
     options: ['clinton', 'bush', 'bidon'],
     answer: 'bidon' 
   }]
+
+
+  //questions generator
+
+  document.querySelector("#start").addEventListener("click", displayCurrentQuestion);
   var current_question = questions[current_question_index];
 
   function displayCurrentQuestion() {
@@ -30,28 +34,15 @@ const questions = [{
   question_options[i].textContent=current_question.options[i]
 
 }
-
   }
   document.addEventListener("click",handleAnswerquestion)
 
   function handleAnswerquestion (event){
-    console.log('here')
     if (event.target.matches(".answer-button")) {
-      console.log("there")
       if(event.target.textContent===current_question.answer){
-        console.log('here')
         current_question_index++
         displayCurrentQuestion()
       }
     }
-
   }
 
-
-document.querySelector("#start").addEventListener("click", displayCurrentQuestion);
-
-
-//var current_question = questions[current_question_index];
-   // var p = document.createElement("p");
-    //p.textContent = current_question.title; 
-   // document.querySelector("#currentQuestion").appendChild(p);

@@ -10,8 +10,13 @@
 
 <body>
 
-<header class="header"></header>
-<button class="start-button" id="start">Beging Quiz</button>
+<nav class="navbar">
+<p id="HighScores">View HighScores</p>
+<p id="time-left">Time left:</p>
+</nav>
+
+
+
 
 <div class="contiainer">
   <div class="questions">
@@ -20,9 +25,22 @@
     <button class="answer-button"></button>
     <button class="answer-button"></button>
     <button class="answer-button"></button>
-    
   </div>  
 </div>  
+<br>
+
+<button class="start-button" id="start">Start Quiz</button>
+
+<div class="score-container">
+  <form class="submit-form">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  </div>
+
 
 <script src="script.js"></script>
 </body>
