@@ -1,48 +1,55 @@
 var startQuiz = document.getElementById("start-button");
-var questionTitles=document.getElementById("question-title");
-var question_options=document.getElementsByClassName("answer-button");
+var questionTitles = document.getElementById("question-title");
+var question_options_A = document.getElementById("answer-button-A");
+var question_options_B = document.getElementById("answer-button-B");
+var question_options_C = document.getElementById("answer-button-C");
 var current_question_index = 0;
 
-//questions
-const questions = [{
-    title: 'What color is the sky?',
-    options: ['red', 'yellow', 'blue'],
-    answer: 'blue' 
+const questions = [
+  {
+    title: "What color is the sky?",
+    options: ["red", "yellow", "blue"],
+    answer: 2,
   },
-{
-    title: 'What day is today?',
-    options: ['mon', 'tues', 'weds'],
-    answer: 'weds' 
+  {
+    title: "What day is today?",
+    options: ["mon", "tues", "weds"],
+    answer: 2,
   },
- {
-    title: 'Who is the prez?',
-    options: ['clinton', 'bush', 'bidon'],
-    answer: 'bidon' 
-  }]
+  {
+    title: "Who is the prez?",
+    options: ["clinton", "bush", "bidon"],
+    answer: 2,
+  },
+];
 
+//question generator
 
-  //questions generator
+document
+  .querySelector("#start")
+  .addEventListener("click", displayCurrentQuestion);
 
-  document.querySelector("#start").addEventListener("click", displayCurrentQuestion);
-  var current_question = questions[current_question_index];
+function displayCurrentQuestion() {
+  console.log (questions[current_question_index])
+  current_question = questions[current_question_index];
+  questionTitles.innerHTML = current_question.title;
 
-  function displayCurrentQuestion() {
-    current_question = questions[current_question_index];
-    questionTitles.textContent=current_question.title
-    var i;
-  for (i = 0; i < current_question.options.length; i++) {
-  question_options[i].textContent=current_question.options[i]
+  for (var i = 0; questions[current_question_index].options.length; i++) {
 
-}
+    question_options_A.innerHTML = current_question.options[i];
+    question_options_B.innerHTML = current_question.options[i];
+    question_options_C.innerHTML = current_question.options[i];
   }
-  document.addEventListener("click",handleAnswerquestion)
+}
+//*document.addEventListener("click", handleAnswerquestion);
 
-  function handleAnswerquestion (event){
-    if (event.target.matches(".answer-button")) {
-      if(event.target.textContent===current_question.answer){
-        current_question_index++
-        displayCurrentQuestion()
-      }
+function handleAnswerquestion(event) {
+  if (event.target.matches(".answer-button")) {
+    if (event.target.textContent === current_question.answer) {
+      current_question_index++;
+      displayCurrentQuestion();
     }
   }
+}
 
+function checkAnswers(answer) {}

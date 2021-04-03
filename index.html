@@ -15,31 +15,20 @@
 <p id="time-left">Time left:</p>
 </nav>
 
-
-
-
 <div class="contiainer">
   <div class="questions">
   <div id="currentQuestion">
     <h2 id="question-title"></h2>
-    <button class="answer-button"></button>
-    <button class="answer-button"></button>
-    <button class="answer-button"></button>
+    <button class="answer" id="answer-button-A" onclick="checkAnswers(0)"></button>
+    <button class="answer" id="answer-button-B" onclick="checkAnswers(1)"></button>
+    <button class="answer" id="answer-button-C" onclick="checkAnswers(2)"></button>
   </div>  
 </div>  
 <br>
 
 <button class="start-button" id="start">Start Quiz</button>
 
-<div class="score-container">
-  <form class="submit-form">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Submit">
-  </form> 
-  </div>
+
 
 
 <script src="script.js"></script>
