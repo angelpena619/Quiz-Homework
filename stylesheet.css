@@ -41,7 +41,7 @@
      text-align: right;
  }
 
- .answer-button {
+ .answer {
     border-radius: 10px;
      font-size: 8px;
      display: flex;
@@ -57,21 +57,25 @@
     width: 500px;
     height: 200px;
     background-color: rgb(170, 170, 173);
+}
 
-     
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .start-button {
     background-color: rgb(49, 109, 59);
     color: cornsilk;
-    display: flex;
+    display: block;
     margin: auto;
     width: 200px;
     border-radius: 10px;
     font-size: 20px;
     text-align: center;
-
-
 }
 
 .submit-form {

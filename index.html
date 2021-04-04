@@ -8,12 +8,20 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body>
-
-<nav class="navbar">
-<p id="HighScores">View HighScores</p>
-<p id="time-left">Time left:</p>
-</nav>
+<header>
+  <hi>Code Quiz</hi>
+  <nav>
+      <ul>
+          <li>
+              <a href=""class="highscores">High Scores</a>
+          </li>
+          <li>
+              <div class="timer" id="timer">Time Left:</div>
+          </li>
+      </ul>
+  </nav>
+  </header>
+  <main>
 
 <div class="contiainer">
   <div class="questions">
@@ -23,13 +31,14 @@
     <button class="answer" id="answer-button-B" onclick="checkAnswers(1)"></button>
     <button class="answer" id="answer-button-C" onclick="checkAnswers(2)"></button>
   </div>  
+</div> 
 </div>  
 <br>
 
 <button class="start-button" id="start">Start Quiz</button>
 
 
-
+</main>
 
 <script src="script.js"></script>
 </body>
