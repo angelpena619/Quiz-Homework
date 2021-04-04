@@ -6,6 +6,7 @@ var question_options_C = document.getElementById("answer-button-C");
 var current_question_index = 0;
 var timeLeft = 75;
 
+//---was unsucesull detting up the interval counter but i did attempt so this is commented out
 
 /*startButton.addEventListener("click", function() {
   startTime();
@@ -23,7 +24,7 @@ var timeLeft = 75;
   }, 1000)
 */
 
-
+//---below are tbe question arrays
 const questions = [
   {
     title: "What does the DOM stand for?",
@@ -42,7 +43,7 @@ const questions = [
   },
 ];
 
-//question generator
+//question generator, I was having issues with this syntax im still not confident in my javascript abilities 
 
 document
   .querySelector("#start")
