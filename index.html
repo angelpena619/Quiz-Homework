@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title>
-  <link rel="stylesheet" href="stylesheet.css">
-</head>
 
-<header>
-  <hi>Code Quiz</hi>
-  <nav>
-      <ul>
-          <li>
-              <a href=""class="highscores">High Scores</a>
-          </li>
-          <li>
-              <div class="timer" id="timer">Time Left:</div>
-          </li>
-      </ul>
-  </nav>
-  </header>
-  <main>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div class="contiainer">
-  <div class="questions">
-  <div id="currentQuestion">
-    <h2 id="question-title"></h2>
-    <button class="answer" id="answer-button-A" onclick="checkAnswers(0)"></button>
-    <button class="answer" id="answer-button-B" onclick="checkAnswers(1)"></button>
-    <button class="answer" id="answer-button-C" onclick="checkAnswers(2)"></button>
-  </div>  
-</div> 
-</div>  
-<br>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
 
-<button class="start-button" id="start">Start Quiz</button>
+    <div id="bigDiv">
+      <h1>Example Quiz!</h1>
+      <div class="quiz-container" style="display: none">
+        <div id="quiz"></div>
+      </div>
+      <div id="start_quiz">
+        <button onClick="hideStart(); startQuiz(); initialTimer();">
+          Start Quiz
+        </button>
+      </div>
+      <span id="myTimer"></span>
 
+      <button id="next" style="visibility: hidden">Next Question</button>
 
-</main>
+      <span id="answer_type" style="visibility: hidden"></span>
+      <div id="results"></div>
+      <div id="myName" style="visibility: hidden">
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" />
+        <input type="submit" value="Submit" id="submitButton" />
+      </div>
+    </div>
 
-<script src="script.js"></script>
-</body>
+    <div id="showScore" style="visibility: hidden">
+      <h1>HighScores</h1>
+      <h2 id="myScore"></h2>
+      <button
+        id="goBack"
+        onClick="window.location.reload();"
+        style="visibility: hidden"
+      >
+        Go Back
+      </button>
+      <button id="clearScore" onclick="hi()">Clear HighScore</button>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
 </html>
