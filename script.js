@@ -165,35 +165,35 @@ const resultsContainer = document.getElementById("results");
 
 const myQuestions = [
   {
-    question: "Who invented JavaScript?",
+    question: "What was Jennys last name in forest gump?",
     answers: {
-      a: "Douglas Crockford",
-      b: "Funsuk Sandberg",
-      c: "Brendan Eich",
+      a: "Gump",
+      b: "Chester",
+      c: "Curran",
     },
     correctAnswer: "c",
   },
   {
-    question: "Which one of these is a clone of JavaScript?",
+    question: "Who is our current president?",
     answers: {
-      a: "Node.js",
-      b: "TypeScript",
-      c: "npm",
+      a: "Donald Trump",
+      b: "Joe Bidon",
+      c: "George Bush",
     },
     correctAnswer: "b",
   },
   {
-    question: "Best Framework?",
+    question: "what color is the sky?",
     answers: {
-      a: "Angular",
-      b: "jQuery",
-      c: "RequireJS",
-      d: "ESLint",
+      a: "Blue",
+      b: "Green",
+      c: "Purple",
+      d: "Lint",
     },
     correctAnswer: "a",
   },
   {
-    question: "Quiz Over",
+    question: "it's Over!",
     answers: {},
     correctAnswer: "",
   },
