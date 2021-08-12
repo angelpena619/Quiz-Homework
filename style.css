@@ -1,16 +1,16 @@
 body {
   font-size: 20px;
   font-family: "Work Sans", sans-serif;
-  color: #ff9045;
+  color: #080807;
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
 }
 h1 {
-  font-weight: 300;
+  font-weight: bold;
   margin: 0px;
-  padding: 10px;
-  font-size: 20px;
+  padding: 50px;
+  font-size: 40px;
   background-color: #000;
   color: #fff;
 }
@@ -29,12 +29,15 @@ h1 {
 }
 button {
   font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+
   font-size: 22px;
-  background-color: #aa2276;
+  background-color: #22aa71;
   color: #fff;
   border: 0px;
   border-radius: 3px;
-  padding: 20px;
+  padding:60px;
+  margin: 80px ;
   cursor: pointer;
   margin-bottom: 20px;
 }
