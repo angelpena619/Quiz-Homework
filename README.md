@@ -1,7 +1,5 @@
 # Quiz
 
-Description:
-This page is designed to be a multiple choice quiz to test basic coding knowledge:
 
 Click the start button to begin the quiz.
 Click the button for the answer you choose.
